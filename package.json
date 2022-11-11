@@ -1,0 +1,21 @@
+{
+  "name": "mern-ecomars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon ./server/server",
+    "client": "npm start --prefix ./client/",
+    "full": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.4.0",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express-async-handler": "^1.2.0"
+  }
+}
